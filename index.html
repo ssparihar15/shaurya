@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaurya.com</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body, html{
+            height:100%;
+        }
+
+        /* HERO SECTION WITH BACKGROUND IMAGE */
+     .hero{
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("shaurya.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    color:white;
+    text-align:center;
+    padding-top:420px;
+}
+
+        .hero h1{
+            font-size:60px;
+            letter-spacing:2px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:22px;
+            max-width:800px;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            position:fixed;
+            top:0;
+            width:100%;
+            padding:15px 40px;
+            background:rgba(0,0,0,0.7);
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .navbar h2{
+            font-weight:600;
+        }
+
+        .navbar a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-size:16px;
+        }
+
+        /* CONTENT SECTION */
+        .content{
+            padding:60px 20px;
+            text-align:center;
+            background:#f4f4f4;
+        }
+
+        .content h2{
+            margin-bottom:20px;
+            font-size:32px;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            padding:25px;
+            border-radius:8px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>Shaurya.com</h2>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Welcome to Shaurya's World</h1>
+        <p>Celebrating courage, happiness, and beautiful memories through this personal website.</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <h2>About Shaurya</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Bravery</h3>
+                <p>Shaurya means courage and strength that inspires everyone.</p>
+            </div>
+            <div class="card">
+                <h3>Joy</h3>
+                <p>A source of happiness and smiles for the family.</p>
+            </div>
+            <div class="card">
+                <h3>Future</h3>
+                <p>A bright future full of dreams, learning, and success.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Shaurya.com | Made with ❤️
+    </footer>
+
+</body>
+</html>
